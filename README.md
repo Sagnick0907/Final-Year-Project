@@ -1,5 +1,5 @@
 # Final-Year-Project
-# Optical Mark Recognition using Python & OpenCV  
+# Optical Mark Recognition Application using Python & OpenCV  
 
 ## Table of Content
   * [Demo](#demo)
@@ -25,8 +25,7 @@ At present OMR technology is very expensive because of which regular educational
 
 Our proposed methodology involves generating results from a marked OMR sheets using inbuilt image transformation functions, contour detection and display functions. We will be using OpenCV library in the back-end and Tkinter library for UI. 
 Firstly, we design the OMR template for the question which we will be scanning. 
-![image](https://github.com/Sagnick0907/Final-Year-Project/assets/76872499/040b0292-85af-455c-af2e-0d4440eae31f) | ![image](https://github.com/Sagnick0907/Final-Year-Project/assets/76872499/37487be8-2508-4b32-b156-8dce73ceee68)
- |  
+![image](https://github.com/Sagnick0907/Final-Year-Project/assets/76872499/040b0292-85af-455c-af2e-0d4440eae31f) | ![image](https://github.com/Sagnick0907/Final-Year-Project/assets/76872499/37487be8-2508-4b32-b156-8dce73ceee68)  
 Then we will discuss the detailed backend working of our system and cover the basic intuition of how system is working. 
 1.	For taking inputs, we have 2 options: (i). To take a snapshot of the answer sheet and select it from the target directory or, (ii). Produce the output over the answer sheet in real-time using webcam. For this, we have used webCamFeed and cv2.VideoCapture() named functions from OpenCV. 
 2.	Then we will create multiple copies of the image in Gray scale format, used Gaussian blur to create blurred format & Canny function to detect edges. This makes it helpful for easily detecting marked/ highlighted points by user. The high blur helps reduce the high frequency noise, that means distortion of image. Also created a custom function for displaying multiple images simultaneously.
@@ -47,6 +46,5 @@ For the frontend section we used the following approach:
 
 ## Technologies Used
 - Pycharm
-- Tkinter Library
-- Concepts used : Random Forest Regressor + Hyperparameter Tuning(Randomized CV)
-- Libraries: pandas, numpy, seaborn, matplotlib, sk-learn, etc.
+- Concepts used : Image Filtering, Custom 4-sided Contour Detection, Warp Perspective Transformation, Display.  
+- Libraries: cv2, numpy, Tkinter.
